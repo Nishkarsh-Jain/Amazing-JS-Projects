@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  background-color: rgb(57, 55, 54);
+}
+
+h1 {
+  font-size: 50px;
+  letter-spacing: 3px;
+  color: rgb(34, 255, 0);
+  text-shadow: 2px 4px 3px #fff;
+  white-space: nowrap; /*To avoid the wrapping of the text*/
+}
+
+.btn {
+  padding: 30px 50px;
+  border: none;
+  background-color: white;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  min-width: 200px; /*So each btn is of equal size.*/
+  border-radius: 10px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+  background-image: url("Images/crash.jpg");
+  background-size: cover;
+  color: white;
+  font-family: cursive;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.btn:hover {
+  color: orangered;
+}
+
+.btn:active {
+  background-size: 105%;
+}
+
+.container {
+  text-align: center; /*To make the btns at the center,*/
+  border:5px solid #fff;
+  border-radius: 10px;
+}
