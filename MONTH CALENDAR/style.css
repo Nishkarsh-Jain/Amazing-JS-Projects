@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+  box-sizing: border-box; /*To avoid movements among day divs*/
+}
+
+.container {
+  height: 100vh;
+  background-color: rgb(42, 41, 39);
+  /*To bring elements in center*/
+  width: 100%;
+  display: flex;
+  justify-content: center; /*To Horizantly center*/
+  align-items: center; /*To vertically center*/
+}
+
+.calender {
+  background-color: black;
+  color: rgb(43, 42, 41);
+  width: 450px;
+  height: 520px;
+  box-shadow: 4px 4px 8px rgba(252, 253, 253, 0.8); /*H, V, Blur Radius, transprency*/
+  border-radius: 10px;
+}
+
+.month {
+  height: 120px;
+  background-color: rgb(9, 243, 243);
+  /*To bring elements in center*/
+  width: 100%;
+  display: flex;
+  justify-content: center; /*To Horizantly center*/
+  align-items: center; /*To vertically center*/
+  text-align: center; /*To make text at center*/
+  border-radius: 10px 10px 0 0; /*As month is over calender*/
+}
+
+.month h1 {
+  font-size: 35px;
+}
+
+.month p {
+  color: rgb(249, 251, 253);
+  font-weight: 600;
+}
+
+.weekdays {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  color: #fff;
+}
+
+.weekdays div {
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  /*To set elements at center*/
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.days {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2px;
+  color: #fff;
+}
+
+.days div {
+  font-size: 14px;
+  margin: 3px;
+  width: 57.5px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.days div:hover:not(.empty) {
+  /*so that divs with empty class will get avoided.*/
+  cursor: pointer;
+  border: 1px solid aqua;
+}
+
+.today {
+  background-color: rgb(19, 199, 190);
+}
