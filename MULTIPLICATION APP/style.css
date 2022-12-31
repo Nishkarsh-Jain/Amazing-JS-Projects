@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  text-align: center;
+  background-color: yellow;
+  font-family: cursive;
+}
+
+.form {
+  background-color: white;
+  padding: 40px; /*To make the text inside the form*/
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+#input {
+  display: block; /*To make input filed & submit btn on separate rows.*/
+  width: 100%;
+  box-sizing: border-box; /* As space on both L/R is unequal so to solve this we use box-sizing  */
+  font-size: 20px;
+  text-align: center;
+  border: solid 2px rgb(8, 11, 223);
+  margin-bottom: 20px;
+  color: blue;
+}
+
+.input::before {
+  color: lightgray;
+  font-family: cursive;
+}
+
+.btn {
+  background-color: green;
+  color: white;
+  padding: 5px;
+  border-color: rgb(212, 235, 10);
+  cursor: pointer;
+}
+
+.btn:hover{
+    filter: brightness(80%);
+}
+
+.score{
+    text-align: right;
+    color: brown;
+}
